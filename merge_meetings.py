@@ -15,7 +15,8 @@ def merge_meetings(meetings):
             # reassign last item in merged meeting to the new merged tuple, checking to see if the new end should be
             # the end of our current tuple, or the last end, meaning the current tuple would be totally subsumbed by the
             # old tuple
-            meetings[-1] = (last_merged_start, max(last_merged_end, end))
+            merged_meetings[-1] = (last_merged_start,
+                                   max(last_merged_end, end))
             # else, just add the current tuple
         else:
             merged_meetings.append((start, end))
