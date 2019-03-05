@@ -7,6 +7,7 @@ def compress(string):
         else:
             if count > 1:
                 new_string += str(count)
+            # This line I don't really understand
             new_string += string[i+1]
             count = 1
     if count > 1:
