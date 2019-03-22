@@ -5,3 +5,6 @@ def exact_length_flight(flight_length, movie_lengths):
         if match in movie_lengths_seen:
             return True
         movie_lengths_seen.add(movie)
+
+
+print("test")
